@@ -1,7 +1,7 @@
 variable "aws_region" {
   description = "AWS region for deployment"
   type        = string
-  default     = "us-west-2"
+  default     = "us-east-1"
 }
 
 variable "environment" {
@@ -13,12 +13,12 @@ variable "environment" {
 variable "project_name" {
   description = "Name of the project"
   type        = string
-  default     = "my-practice-app"
+  default     = "terraform-services"
 }
 
 variable "db_password" {
   description = "Database password"
   type        = string
   sensitive   = true
-  default     = "SecurePassword123!" # Change this!
+  default     = "1234"
 }
